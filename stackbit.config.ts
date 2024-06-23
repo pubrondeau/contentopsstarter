@@ -3,6 +3,7 @@ import { GitContentSource } from '@stackbit/cms-git';
 import { allModels } from 'sources/local/models';
 
 const gitContentSource = new GitContentSource({
+    repoBranch: "preview"
     rootPath: __dirname,
     contentDirs: ['content'],
     models: Object.values(allModels),
